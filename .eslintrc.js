@@ -27,9 +27,9 @@ module.exports = {
     "handle-callback-err": 0,
     "space-before-function-paren":0,
     "new-cap": 0,
-    "one-var":0,
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off'
   },
+  // 定义全局变量，处理为声明变量的规则
   globals: {
     'Vue': true,
     'VueRouter': true,

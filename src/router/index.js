@@ -7,13 +7,11 @@ const routes = [{
   path: '/',
   redirect: '/index',
   name: 'home',
-  component: () =>
-            import('@/pages/home'),
+  component: () => import('@/pages/home'),
   children: [{
     path: '/index',
     name: 'index',
-    component: () =>
-                    import('@/pages/index'),
+    component: () => import('@/pages/index'),
     meta: {
       nav: '/index'
     }
@@ -23,13 +21,11 @@ const routes = [{
 {
   path: '/redirect',
   name: 'redirect',
-  component: () =>
-            import('@/pages/redirect')
+  component: () => import('@/pages/redirect')
 },
 {
   path: '*',
-  component: () =>
-            import('@/pages/404')
+  component: () => import('@/pages/404')
 }
 ];
 
