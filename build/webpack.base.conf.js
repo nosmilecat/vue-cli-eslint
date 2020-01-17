@@ -11,11 +11,11 @@ function resolve (dir) {
 
 module.exports = {
   plugins: [
-      new webpack.ProvidePlugin({
-          $: 'jquery/dist/jquery.min.js',
-          jQuery: 'jquery/dist/jquery.min.js',
-          "windows.jQuery": 'jquery/dist/jquery.min.js'
-      })
+      // new webpack.ProvidePlugin({
+      //     $: 'jquery/dist/jquery.min.js',
+      //     jQuery: 'jquery/dist/jquery.min.js',
+      //     "windows.jQuery": 'jquery/dist/jquery.min.js'
+      // })
   ],
   context: path.resolve(__dirname, '../'),
   entry: {
@@ -33,7 +33,7 @@ module.exports = {
     alias: {
       'vue$': 'vue/dist/vue.esm.js',
       '@': resolve('src'),
-      'jQuery': 'jquery/dist/jquery.min.js',
+      // 'jQuery': 'jquery/dist/jquery.min.js',
     }
   },
   module: {
@@ -106,6 +106,7 @@ module.exports = {
     'vue-router': 'VueRouter',
     'vuex': 'Vuex',
     'element-ui':'ELEMENT',
-    'axios': 'axios'
+    'axios': 'axios',
+    '$': '$',
   }
 }

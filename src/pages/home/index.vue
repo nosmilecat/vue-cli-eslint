@@ -10,6 +10,19 @@
 import mtFooter from './footer';
 export default {
   components: {mtFooter},
+  metaInfo: {
+    title: 'demo',
+    meta: [
+      {
+        name: 'keywords',
+        content: 'demo'
+      },
+      {
+        name: 'description',
+        content: 'demo'
+      }
+    ]
+  },
   data() {
     return {
     };

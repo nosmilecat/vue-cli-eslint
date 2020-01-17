@@ -14,7 +14,7 @@ import store from './store/index'
 import MetaInfo from 'vue-meta-info'
 import preview from 'vue-photo-preview'
 import 'vue-photo-preview/dist/skin.css'
-import 'vue-directive-image-previewer/dist/assets/style.css'
+
 Vue.use(preview)
 Vue.use(MetaInfo)
 router.afterEach((to, from, next) => {
