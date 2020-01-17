@@ -5,7 +5,7 @@
   "author": "szh",
   "private": true,
   "scripts": {
-    "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
+    "dev": "webpack-dev-server --open --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
     "build": "node build/build.js",
     "lint": "eslint --fix --ext .js,.vue src test/unit test/e2e/specs"
